@@ -6,7 +6,7 @@ brew install postgresql
 initdb /usr/local/var/postgres
 
 # start/stop/restart/status
-$ postgres -D /usr/local/var/postgres start/stop/restart/status
+postgres -D /usr/local/var/postgres [start/stop/restart/status]
 
 # create your DB
-$ createdb lixudb
+createdb lixudb
