@@ -13,4 +13,5 @@ createdb lixudb
 
 ## kill process
 ps -ef | grep postmaster | awk '{print $2}'
+
 kill <the_pid_you_just_got>
