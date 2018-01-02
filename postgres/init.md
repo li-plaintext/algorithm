@@ -18,8 +18,13 @@ kill <the_pid_you_just_got>
 
 ## additional info
 \l :List databases
+
 \c database-name :Connect to database
+
 \c :Show the database your are connected to
+
 \d :List tables in database
+
 \d table-name :Describe table
+
 SELECT * FROM table-name :List table contents
