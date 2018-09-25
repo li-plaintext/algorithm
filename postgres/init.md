@@ -11,6 +11,9 @@ pg_ctl -D /usr/local/var/postgres [start/stop/restart/status]
 ## create your DB
 createdb lixudb
 
+## Login "lixudb" database through commandline
+psql lixudb
+
 ## kill process
 ps -ef | grep postmaster | awk '{print $2}'
 
