@@ -1,7 +1,7 @@
 ### GIS system
 
 ##### Formula
-> Angle in radian
+> Angle in radian, latlog(θ, λ)
 
 ```javascript
 GET_X = λ 
