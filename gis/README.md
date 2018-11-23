@@ -1,7 +1,7 @@
 ### GIS system
 
 ##### Formula
-> Angle in radian, latlog(θ, λ) => tile(x, y)
+> Angle in radian
 
 ```javascript
 GET_X = λ 
@@ -19,6 +19,7 @@ y = GET_Y * R
 ```
 
 ##### Lon and lat to TMS(tile numbers or pixel coordinates) x/y
+> latlog(θ, λ) => tile(x, y)
 
 ```javascript
  n = 2 ^ zoom
