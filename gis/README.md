@@ -18,11 +18,11 @@ x = GET_X * R
 y = GET_Y * R
 ```
 
-##### Lon and lat to TMS(tile numbers or pixel coordinates) x/y
+##### In slippy map, Lon and lat to TMS(tile numbers or pixel coordinates) x/y
 > latlog(θ, λ) => tile(x, y)
 
 ```javascript
  n = 2 ^ zoom
- xtile = n * GET_X
+ xtile = n * ((GET_X + π)/ 2π)
  ytile = (n/2) * (1 - GET_Y / π)
 ```
