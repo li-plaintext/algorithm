@@ -1,7 +1,9 @@
 ### GIS system
 
 ##### Formula
-> Angle in radian, latlog(θ, λ)
+> λ: latitude in radian
+
+> θ: longtidue in radian
 
 ```javascript
 GET_X = λ 
