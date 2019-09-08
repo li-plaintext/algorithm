@@ -1,25 +1,25 @@
 
-## get from home grew
+## Get from home grew
 brew install postgresql
 
-## if it is fisrt time
+## If it is fisrt time
 initdb /usr/local/var/postgres
 
 ## start/stop/restart/status
 pg_ctl -D /usr/local/var/postgres [start/stop/restart/status]
 
-## create your DB
+## Create your DB
 createdb lixudb
 
 ## Login "lixudb" database through commandline
 psql lixudb
 
-## kill process
+## Kill process
 ps -ef | grep postmaster | awk '{print $2}'
 
 kill <the_pid_you_just_got>
 
-## additional info
+## Additional info
 \l :List databases
 
 \c database-name :Connect to database
@@ -31,3 +31,10 @@ kill <the_pid_you_just_got>
 \d table-name :Describe table
 
 SELECT * FROM table-name :List table contents
+
+
+## Delete table
+drop table YOUR_TABLE_NAME
+
+## Execute .sql file
+psql -d lixudb -f YOUR_FILE.sql
