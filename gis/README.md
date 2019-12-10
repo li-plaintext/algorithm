@@ -1,9 +1,9 @@
 ### GIS system
 
 ##### Formula
-> λ: latitude in radian
+> λ: longtidue in radian
 
-> θ: longtidue in radian
+> θ: latitude in radian
 
 ```javascript
 GET_X = λ 
