@@ -26,11 +26,11 @@ run the command in terminal "bash <(curl -s -L https://git.io/v2ray.sh)"
     "settings": {
       "vnext": [
         {
-          "address": "18.162.50.159",
-          "port": 57777,
+          "address": "18.162.50.159", <-- Server public IP
+          "port": 57777,<-- Server public port
           "users": [
             {
-              "id": "ac231d92-7135-445a-9006-cd83a8e9ceb4",
+              "id": "ac231d92-7135-445a-9006-cd83a8e9ceb4", <-- Server UUID
               "level": 1,
               "alterId": 100
             }
