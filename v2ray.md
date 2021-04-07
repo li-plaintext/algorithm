@@ -658,3 +658,45 @@ main() {
 
 main "$@"
 ```
+
+
+```javascript
+{
+    "log": {
+      "loglevel": "warning"
+    },
+    "inbound": {
+      "listen": "127.0.0.1",
+      "port": 1080,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "ip": "127.0.0.1"
+      }
+    },
+    "outbound": {
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "34.96.203.96", 
+            "port": 8383,
+            "users": [
+              {
+                "id": "cb279737-9b03-40fd-975f-4c6e4a88b4da",
+                "level": 1,
+                "alterId": 100
+              }
+            ]
+          }
+        ]
+      },
+      "mux": {
+        "enabled": true,
+        "concurrency": 8
+      }
+    }
+  }
+```
+
