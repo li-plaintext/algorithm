@@ -4,50 +4,9 @@ https://zshttp.com/1310.htm
 run the command in terminal "bash <(curl -s -L https://git.io/v2ray.sh)"
 
 ## Client
-"/etc/v2ray/config.json"
+1. install the bash as below, "sudo bash xxx.sh"
 
-```
-{
-  "log": {
-    "loglevel": "warning"
-  },
-  "inbound": {
-    "listen": "127.0.0.1",
-    "port": 1080,
-    "protocol": "socks",
-    "settings": {
-      "auth": "noauth",
-      "udp": true,
-      "ip": "127.0.0.1"
-    }
-  },
-  "outbound": {
-    "protocol": "vmess",
-    "settings": {
-      "vnext": [
-        {
-          "address": "18.162.50.159", <-- Server public IP
-          "port": 57777,<-- Server public port
-          "users": [
-            {
-              "id": "ac231d92-7135-445a-9006-cd83a8e9ceb4", <-- Server UUID
-              "level": 1,
-              "alterId": 100
-            }
-          ]
-        }
-      ]
-    },
-    "mux": {
-      "enabled": true,
-      "concurrency": 8
-    }
-  }
-}
-```
-
-
-```
+```bash
 #!/usr/bin/env bash
 
 # The files installed by the script conform to the Filesystem Hierarchy Standard:
@@ -658,7 +617,7 @@ main() {
 
 main "$@"
 ```
-
+2. connect to the v2ray server by using config file as below, "/usr/local/bin/v2ray -c xxx.json"
 
 ```javascript
 {
